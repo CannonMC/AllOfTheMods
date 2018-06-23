@@ -8,7 +8,7 @@ import net.minecraft.client.*;
 import net.minecraft.network.*;
 
 @SideOnly(Side.CLIENT)
-public class temp extends S2EPacketCloseWindow
+public class Client extends S2EPacketCloseWindow
 {
     public void processPacket(final INetHandlerPlayClient handler) {
         handler.handleCloseWindow((S2EPacketCloseWindow)this);
