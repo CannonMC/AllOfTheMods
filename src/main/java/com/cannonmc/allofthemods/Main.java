@@ -12,6 +12,7 @@ public class Main {
     public static final String MODID = "allofthemods";
     public static final String VERSION = "1.1";
     //new test comment
+    //James test
     
     private static Configuration config;
     private static int defaultValue;
