@@ -1,5 +1,6 @@
 package com.cannonmc.allofthemods.init;
 
+import com.cannonmc.allofthemods.AllOfTheMods;
 import com.cannonmc.allofthemods.Reference;
 import com.cannonmc.allofthemods.blocks.TheBlock;
 
@@ -15,7 +16,7 @@ public class AOTMBlocks {
 	public static Block the_block;
 
 	public static void init() {
-		the_block = new TheBlock(Material.iron).setUnlocalizedName("the_block");
+		the_block = new TheBlock(Material.iron).setUnlocalizedName("the_block").setCreativeTab(AllOfTheMods.modCreativeTab);;
 		
 	}
 

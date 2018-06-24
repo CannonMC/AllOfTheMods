@@ -1,5 +1,6 @@
 package com.cannonmc.allofthemods.init;
 
+import com.cannonmc.allofthemods.AllOfTheMods;
 import com.cannonmc.allofthemods.Reference;
 
 import net.minecraft.client.Minecraft;
@@ -12,7 +13,7 @@ public class AOTMItems {
 	public static Item the_item;
 
 	public static void init() {
-		the_item = new Item().setUnlocalizedName("the_item");
+		the_item = new Item().setUnlocalizedName("the_item").setCreativeTab(AllOfTheMods.modCreativeTab);
 		
 	}
 

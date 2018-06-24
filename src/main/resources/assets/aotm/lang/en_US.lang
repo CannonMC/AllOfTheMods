@@ -1,3 +1,5 @@
 item.the_item.name=The Item
 
 tile.the_block.name=The Block
+
+itemGroup.modCreativeTab=The Tab
