@@ -1,5 +1,5 @@
 {
-    "parent": "aotm:block/the_block",
+    "parent": "aotm:block/the_ore",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],
