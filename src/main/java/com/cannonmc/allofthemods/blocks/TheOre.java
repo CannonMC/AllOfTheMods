@@ -13,7 +13,6 @@ public class TheOre extends Block{
 		this.setHarvestLevel("pickaxe", 2);
 		this.setLightLevel(0.5f);
 		this.setStepSound(this.soundTypeStone);
-		
 	}
 
 }
