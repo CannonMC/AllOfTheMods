@@ -22,11 +22,13 @@ public class AllOfTheMods {
     public void preInit(FMLPreInitializationEvent event) {
     	AOTMItems.init();
     	AOTMItems.register();
+    	
     }
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
     	proxy.registerRenders();
+    	
     }
     
     @EventHandler
