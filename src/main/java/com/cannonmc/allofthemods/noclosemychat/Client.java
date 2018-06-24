@@ -1,11 +1,11 @@
 package com.cannonmc.allofthemods.noclosemychat;
 
-import net.minecraft.network.play.server.*;
-import net.minecraftforge.fml.relauncher.*;
-import net.minecraft.network.play.*;
-import net.minecraft.client.gui.*;
-import net.minecraft.client.*;
-import net.minecraft.network.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiChat;
+import net.minecraft.network.play.INetHandlerPlayClient;
+import net.minecraft.network.play.server.S2EPacketCloseWindow;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
 public class Client extends S2EPacketCloseWindow

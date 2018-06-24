@@ -1,7 +1,8 @@
 package com.cannonmc.allofthemods.noclosemychat;
 
-import net.minecraftforge.fml.relauncher.*;
-import java.util.*;
+import java.util.Map;
+
+import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 @IFMLLoadingPlugin.MCVersion("1.8.9")
 @IFMLLoadingPlugin.TransformerExclusions({ "com.cecer1.noclosemychat" })
