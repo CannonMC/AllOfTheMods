@@ -1,5 +1,6 @@
 package com.cannonmc.allofthemods;
 
+import com.cannonmc.allofthemods.init.AOTMBlocks;
 import com.cannonmc.allofthemods.init.AOTMItems;
 import com.cannonmc.allofthemods.proxy.CommonProxy;
 
@@ -20,9 +21,12 @@ public class AllOfTheMods {
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+    	//Loads mod items
     	AOTMItems.init();
     	AOTMItems.register();
-    	
+    	//Loads mod blocks
+    	AOTMBlocks.init();
+    	AOTMBlocks.register();
     }
     
     @EventHandler

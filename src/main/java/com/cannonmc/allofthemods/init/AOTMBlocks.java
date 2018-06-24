@@ -1,34 +1,38 @@
 package com.cannonmc.allofthemods.init;
 
 import com.cannonmc.allofthemods.Reference;
+import com.cannonmc.allofthemods.blocks.TheBlock;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class AOTMItems {
-
-	public static Item the_item;
+public class AOTMBlocks {
+	
+	public static Block the_block;
 
 	public static void init() {
-		the_item = new Item().setUnlocalizedName("the_item");
+		the_block = new TheBlock(Material.iron).setUnlocalizedName("the_block");
 		
 	}
 
 	public static void register() {
-		GameRegistry.registerItem(the_item, the_item.getUnlocalizedName().substring(5));
-		
+		GameRegistry.registerBlock(the_block, the_block.getUnlocalizedName().substring(5));
 	}
 
 	public static void registerRenders() {
-		registerRender(the_item);
+		registerRender(the_block);
 		
 	}
 
-	public static void registerRender(Item item) {
+	public static void registerRender(Block block) {
+		Item item = Item.getItemFromBlock(block);
+		
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
 				new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
-		
 	}
+	
 }
