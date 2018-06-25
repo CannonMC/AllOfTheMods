@@ -18,7 +18,9 @@ public class AllOfTheMods {
     @SidedProxy(serverSide = Reference.SERVER_PROXY_CLASS, clientSide = Reference.CLIENT_PROXY_CLASS)
     public static CommonProxy proxy;
     
-    public static final ModCreativeTab modCreativeTab = new ModCreativeTab("modCreativeTab");
+    
+    //Creative tab
+    public static final ModCreativeTab modCreativeTab = new ModCreativeTab("modCreativeTab");    
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
