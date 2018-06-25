@@ -2,7 +2,7 @@ package com.cannonmc.allofthemods.init;
 
 import com.cannonmc.allofthemods.AllOfTheMods;
 import com.cannonmc.allofthemods.Reference;
-import com.cannonmc.allofthemods.blocks.TheBlock;
+import com.cannonmc.allofthemods.blocks.TheOre;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,19 +14,22 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AOTMBlocks {
 	
-	public static Block the_block;
+	//Blocks
+	public static Block the_ore;
 
+	
 	public static void init() {
-		the_block = new TheBlock(Material.iron).setUnlocalizedName("the_block").setCreativeTab(AllOfTheMods.modCreativeTab);;
+		the_ore = new TheOre(Material.rock).setUnlocalizedName("the_ore").setCreativeTab(AllOfTheMods.modCreativeTab);;
 		
 	}
 
 	public static void register() {
-		GameRegistry.registerBlock(the_block, the_block.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(the_ore, the_ore.getUnlocalizedName().substring(5));
 	}
 
 	public static void registerRenders() {
-		registerRender(the_block);
+		//Register block
+		registerRender(the_ore);
 		
 	}
 
