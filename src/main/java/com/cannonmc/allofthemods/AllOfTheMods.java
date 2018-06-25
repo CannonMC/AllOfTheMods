@@ -23,7 +23,8 @@ public class AllOfTheMods {
     
     
     //Creative tab
-    public static final ModCreativeTab modCreativeTab = new ModCreativeTab("modCreativeTab");    
+    public static final ModCreativeTab modCreativeTab = new ModCreativeTab("modCreativeTab");
+    public static final ModCreativeTab WIPTab = new ModCreativeTab("WIP");    
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
