@@ -4,6 +4,7 @@ import com.cannonmc.allofthemods.AllOfTheMods;
 import com.cannonmc.allofthemods.Reference;
 import com.cannonmc.allofthemods.blocks.TheBlock;
 import com.cannonmc.allofthemods.blocks.TheOre;
+import com.cannonmc.allofthemods.blocks.TheStair;
 import com.cannonmc.allofthemods.init.AOTMItems;
 
 import net.minecraft.block.Block;
@@ -21,17 +22,20 @@ public class AOTMBlocks {
 	//Blocks
 	public static Block the_ore;
 	public static Block the_block;
+	public static Block the_stair;
 
 	
 	public static void init() {
 		the_ore = new TheOre(Material.rock).setUnlocalizedName("the_ore").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_block = new TheBlock(Material.rock).setUnlocalizedName("the_block").setCreativeTab(AllOfTheMods.modCreativeTab);;
+		the_stair = new TheStair(the_block.getDefaultState()).setUnlocalizedName("the_stair").setCreativeTab(AllOfTheMods.modCreativeTab);;
 		
 	}
 
 	public static void register() {
 		GameRegistry.registerBlock(the_ore, the_ore.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(the_block, the_block.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(the_stair, the_stair.getUnlocalizedName().substring(5));
 
 	}
 
@@ -39,6 +43,7 @@ public class AOTMBlocks {
 		//Register block
 		registerRender(the_ore);
 		registerRender(the_block);
+		registerRender(the_stair);
 		
 	}
 	
