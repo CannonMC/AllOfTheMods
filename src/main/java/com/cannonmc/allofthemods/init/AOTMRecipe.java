@@ -7,10 +7,11 @@ public class AOTMRecipe {
 	
 	public static void init() {
 		
+		//Shaped crafting recipes
 		GameRegistry.addRecipe(new ItemStack(AOTMItems.the_tool), new Object[]{"III", " I ", " I ", 'I', AOTMItems.the_item});
-		
 		GameRegistry.addRecipe(new ItemStack(AOTMBlocks.the_block), new Object[]{"III", "III", "III", 'I', AOTMItems.the_item});
 		
+		//Shapeless crafting recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(AOTMItems.the_item, 9), new Object[] {new ItemStack(AOTMBlocks.the_block)});
 		
 		//Smelting
