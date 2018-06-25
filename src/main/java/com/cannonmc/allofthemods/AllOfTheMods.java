@@ -28,10 +28,12 @@ public class AllOfTheMods {
     	//Loads mod items
     	AOTMItems.init();
     	AOTMItems.register();
+    	
     	//Loads mod blocks
     	AOTMBlocks.init();
     	AOTMBlocks.register();
     	
+    	//Loads recipes
     	AOTMRecipe.init();
     }
     
