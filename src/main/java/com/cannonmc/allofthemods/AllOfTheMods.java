@@ -38,6 +38,7 @@ public class AllOfTheMods {
     	//Loads recipes
     	AOTMRecipe.init();
     	
+    	//Loads ore generation
     	AOTMOreGeneration.init();
     	
     }

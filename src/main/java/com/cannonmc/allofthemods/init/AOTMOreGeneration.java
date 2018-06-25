@@ -41,7 +41,7 @@ public class AOTMOreGeneration implements IWorldGenerator {
 	}
 
 	public void generateOverworld(World world, Random rand, int x, int z) {
-		generateOre(AOTMBlocks.the_ore, world, rand, x, z, 1, 5, 100, 0, 80, Blocks.stone);
+		generateOre(AOTMBlocks.the_ore, world, rand, x, z, 10, 20, 100, 0, 70, Blocks.stone);
 		//Change 100 to something else after
 	}
 
