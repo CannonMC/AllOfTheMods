@@ -6,4 +6,6 @@ tile.the_ore.name=The Ore
 
 tile.the_block.name=The Block
 
+tile.the_stair.name=The Stair
+
 itemGroup.modCreativeTab=The Tab
