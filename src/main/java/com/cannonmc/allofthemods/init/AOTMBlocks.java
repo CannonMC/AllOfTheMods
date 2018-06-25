@@ -29,10 +29,11 @@ public class AOTMBlocks {
 		the_ore = new TheOre(Material.rock).setUnlocalizedName("the_ore").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_block = new TheBlock(Material.rock).setUnlocalizedName("the_block").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_stair = new TheStair(the_block.getDefaultState()).setUnlocalizedName("the_stair").setCreativeTab(AllOfTheMods.modCreativeTab);
-		the_door = new TheDoor(Material.wood).setUnlocalizedName("the_door").setCreativeTab(AllOfTheMods.modCreativeTab);
+
 		
 		//WIP
 		the_dust = new TheDust().setUnlocalizedName("the_dust").setCreativeTab(AllOfTheMods.WIPTab);
+		the_door = new TheDoor(Material.wood).setUnlocalizedName("the_door").setCreativeTab(AllOfTheMods.WIPTab);
 		
 	}
 
