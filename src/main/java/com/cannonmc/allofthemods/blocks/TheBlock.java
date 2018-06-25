@@ -10,7 +10,7 @@ public class TheBlock extends Block{
 		
 		//Block attributes
 		this.setHardness(4.0f);
-		this.setHarvestLevel("pickaxe", 3);
+		this.setHarvestLevel("pickaxe", 1);
 		this.setLightLevel(0.5f);
 		this.setStepSound(this.soundTypeMetal);
 

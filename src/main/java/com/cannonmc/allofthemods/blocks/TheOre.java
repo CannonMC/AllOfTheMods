@@ -11,7 +11,6 @@ public class TheOre extends Block{
 		//Block attributes
 		this.setHardness(2.0f);
 		this.setHarvestLevel("pickaxe", 2);
-		this.setLightLevel(0.5f);
 		this.setStepSound(this.soundTypeStone);
 	}
 
