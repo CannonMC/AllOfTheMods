@@ -2,6 +2,7 @@ package com.cannonmc.allofthemods;
 
 import com.cannonmc.allofthemods.init.AOTMBlocks;
 import com.cannonmc.allofthemods.init.AOTMItems;
+import com.cannonmc.allofthemods.init.AOTMRecipe;
 import com.cannonmc.allofthemods.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +31,8 @@ public class AllOfTheMods {
     	//Loads mod blocks
     	AOTMBlocks.init();
     	AOTMBlocks.register();
+    	
+    	AOTMRecipe.init();
     }
     
     @EventHandler

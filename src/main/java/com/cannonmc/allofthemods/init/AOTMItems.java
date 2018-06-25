@@ -18,7 +18,7 @@ public class AOTMItems {
 	public static Item the_tool;
 	
 	//Tool materials
-	public static final Item.ToolMaterial theMaterial = EnumHelper.addToolMaterial("theMaterial", 4, 1000, 10.0f, 5.0F, 20);
+	public static final Item.ToolMaterial theMaterial = EnumHelper.addToolMaterial("theMaterial", 4, 1000, 20.0f, 8.0F, 20);
 
 	
 	public static void init() {
@@ -31,12 +31,7 @@ public class AOTMItems {
 		//Adding items
 		GameRegistry.registerItem(the_item, the_item.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(the_tool, the_tool.getUnlocalizedName().substring(5));
-		
-		//Crafting recipes
-		GameRegistry.addRecipe(new ItemStack(the_tool), new Object[]{"TTT",
-				                                                     " T ",
-				                                                     " T ", 'T', the_item});
-		
+
 	}
 
 	public static void registerRenders() {
@@ -45,7 +40,8 @@ public class AOTMItems {
 		registerRender(the_tool);
 		
 	}
-
+	
+	//Don't touch this
 	public static void registerRender(Item item) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
 				new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));

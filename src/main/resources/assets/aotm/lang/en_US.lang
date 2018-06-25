@@ -4,4 +4,6 @@ item.the_tool.name=The Tool
 
 tile.the_ore.name=The Ore
 
+tile.the_block.name=The Block
+
 itemGroup.modCreativeTab=The Tab
