@@ -8,7 +8,7 @@ public class TheSkyRock extends Block{
 	public TheSkyRock(Material materialIn) {
 		super(materialIn);
 		
-		this.setHardness(3.0f);
+		this.setHardness(5.0f);
 		this.setHarvestLevel("pickaxe", 3);
 		this.setStepSound(this.soundTypeStone);
 	}

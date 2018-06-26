@@ -14,6 +14,7 @@ public class TheTool extends ItemPickaxe {
 
 	public TheTool(ToolMaterial material) {
 		super(material);
+		this.isFull3D();
 
 	}
 	
