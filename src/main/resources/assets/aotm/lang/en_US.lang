@@ -9,7 +9,11 @@ tile.the_block.name=The Block
 tile.the_stair.name=The Stair
 
 
+item.the_secret.name=The Secret
+
 tile.secret_stone.name=Stone
+
+tile.secret_wood.name=Oak Wood Planks
 
 
 itemGroup.modCreativeTab=The Tab
