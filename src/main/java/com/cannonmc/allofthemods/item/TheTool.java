@@ -1,11 +1,13 @@
 package com.cannonmc.allofthemods.item;
 
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
-import net.minecraft.item.Item;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
 public class TheTool extends ItemPickaxe {
@@ -21,7 +23,7 @@ public class TheTool extends ItemPickaxe {
 		int j = (int)(entity.prevPosY + (entity.posY - entity.prevPosY) * (double)var4 + 1.62D - (double)entity.getYOffset());
 		int k = (int)(entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double)var4);
 
-		if(true){
+		if(true && entity.inventory.hasItem(Items.arrow)){
 			EntityArrow entityarrow = new EntityArrow(world, (EntityLivingBase)entity, 10F);
 			entityarrow.setDamage(1.8F);
 			entityarrow.setKnockbackStrength(2);
@@ -30,5 +32,17 @@ public class TheTool extends ItemPickaxe {
 		}
 			return itemstack;
 		}
+	
+	public void onCreated(ItemStack itemstack, World world, EntityPlayer entity){
+		float var4 = 1.0F;
+		int i = (int)(entity.prevPosX + (entity.posX - entity.prevPosX) * (double)var4);
+		int j = (int)(entity.prevPosY + (entity.posY - entity.prevPosY) * (double)var4 + 1.62D - (double)entity.getYOffset());
+		int k = (int)(entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double)var4);
 
+		if(true){
+			world.spawnEntityInWorld(new EntityLightningBolt(world, i, j, k));
+		}		
+		
+	}
+	
 }
