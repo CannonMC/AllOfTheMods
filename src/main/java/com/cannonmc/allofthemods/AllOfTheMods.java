@@ -25,7 +25,6 @@ public class AllOfTheMods {
     //Creative tab
     public static final ModCreativeTab modCreativeTab = new ModCreativeTab("modCreativeTab");
     public static final ModCreativeTab SecretBlocksTab = new ModCreativeTab("SecretBlocksTab"); 
-    public static final ModCreativeTab WIPTab = new ModCreativeTab("WIPTab");
     
     
     @EventHandler
@@ -41,8 +40,7 @@ public class AllOfTheMods {
     	//Loads recipes
     	AOTMRecipe.init();
     	
-    	//Loads ore generation
-    	AOTMOreGeneration.init();
+    	proxy.registerWorldGenerators();
     	
     }
     

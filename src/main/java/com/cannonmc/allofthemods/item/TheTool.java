@@ -22,9 +22,9 @@ public class TheTool extends ItemPickaxe {
 		int k = (int)(entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double)var4);
 
 		if(true){
-			EntityArrow entityarrow = new EntityArrow(world, (EntityLivingBase)entity, 6 * 2.0F);
-			entityarrow.setDamage(6*2.0F);
-			entityarrow.setKnockbackStrength(1);
+			EntityArrow entityarrow = new EntityArrow(world, (EntityLivingBase)entity, 10F);
+			entityarrow.setDamage(1.8F);
+			entityarrow.setKnockbackStrength(2);
 			world.playSoundAtEntity(entity, "random.bow", 1.0F, 1.0F / (0.5F * 0.4F + 1.2F) + 6 * 0.5F);
 		if (!world.isRemote) world.spawnEntityInWorld(entityarrow);
 		}
