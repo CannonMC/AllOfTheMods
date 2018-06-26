@@ -19,10 +19,12 @@ public class AOTMRecipe {
 		
 		//Shapeless crafting recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(AOTMItems.the_item, 9), new Object[] {new ItemStack(AOTMBlocks.the_block)});
+		GameRegistry.addShapelessRecipe(new ItemStack(AOTMItems.the_power_arrow), new Object[] {new ItemStack(AOTMItems.the_item), new ItemStack(Items.arrow)});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(AOTMItems.the_secret, 1), new Object[] {new ItemStack(AOTMItems.the_item), new ItemStack(Items.diamond)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AOTMBlocks.secret_stone, 2), new Object[] {new ItemStack(AOTMItems.the_secret), new ItemStack(Blocks.stone)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AOTMBlocks.secret_wood, 2), new Object[] {new ItemStack(AOTMItems.the_secret), new ItemStack(Blocks.planks)});
+		
 		
 		//Smelting
 		GameRegistry.addSmelting(AOTMBlocks.the_ore, new ItemStack(AOTMItems.the_item), 10.0f);
