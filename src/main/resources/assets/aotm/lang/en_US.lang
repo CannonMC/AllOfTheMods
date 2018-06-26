@@ -8,4 +8,12 @@ tile.the_block.name=The Block
 
 tile.the_stair.name=The Stair
 
+
+tile.secret_stone.name=Stone
+
+
 itemGroup.modCreativeTab=The Tab
+
+itemGroup.WIPTab=Experimental
+
+itemGroup.SecretBlocksTab=Secret Blocks

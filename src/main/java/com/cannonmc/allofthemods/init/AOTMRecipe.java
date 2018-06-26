@@ -11,6 +11,9 @@ public class AOTMRecipe {
 		GameRegistry.addRecipe(new ItemStack(AOTMItems.the_tool), new Object[]{"III", " I ", " I ", 'I', AOTMItems.the_item});
 		GameRegistry.addRecipe(new ItemStack(AOTMBlocks.the_block), new Object[]{"III", "III", "III", 'I', AOTMItems.the_item});
 		
+		GameRegistry.addRecipe(new ItemStack(AOTMBlocks.the_stair, 4), new Object[]{"B  ", "BB ", "BBB", 'B', AOTMBlocks.the_block});
+		GameRegistry.addRecipe(new ItemStack(AOTMBlocks.the_stair, 4), new Object[]{"  B", " BB", "BBB", 'B', AOTMBlocks.the_block});
+		
 		//Shapeless crafting recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(AOTMItems.the_item, 9), new Object[] {new ItemStack(AOTMBlocks.the_block)});
 		
