@@ -1,0 +1,103 @@
+{
+    "variants": {
+        "east=none,north=none,south=none,west=none": { "model": "aotm:the_dust" },
+
+        "east=none,north=side,south=none,west=none": { "model": "aotm:the_dust" },
+        "east=none,north=none,south=side,west=none": { "model": "aotm:the_dust" },
+        "east=side,north=none,south=none,west=none": { "model": "aotm:the_dust", "y": 90 },
+        "east=none,north=none,south=none,west=side": { "model": "aotm:the_dust", "y": 90 },
+
+        "east=none,north=up,south=none,west=none": { "model": "aotm:the_dust" },
+        "east=none,north=none,south=up,west=none": { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=up,north=none,south=none,west=none": { "model": "aotm:the_dust" },
+        "east=none,north=none,south=none,west=up": { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+
+        "east=side,north=side,south=none,west=none":   { "model": "aotm:the_dust", "uvlock": true },
+        "east=side,north=up,south=none,west=none":  { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=side,south=none,west=none":  { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=up,south=none,west=none": { "model": "aotm:the_dust", "uvlock": true },
+
+        "east=side,north=none,south=side,west=none":   { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=up,north=none,south=side,west=none":  { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=side,north=none,south=up,west=none":  { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=up,north=none,south=up,west=none": { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+
+        "east=none,north=none,south=side,west=side":   { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=none,south=up,west=side":  { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=none,south=side,west=up":  { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=none,south=up,west=up": { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+
+        "east=none,north=side,south=none,west=side":   { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=none,north=side,south=none,west=up":  { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=none,north=up,south=none,west=side":  { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=none,north=up,south=none,west=up": { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+
+        "east=none,north=side,south=side,west=none":  { "model": "aotm:the_dust" },
+        "east=none,north=up,south=side,west=none": { "model": "aotm:the_dust" },
+        "east=none,north=side,south=up,west=none": { "model": "aotm:the_dust", "y": 180 },
+        "east=none,north=up,south=up,west=none": { "model": "aotm:the_dust" },
+
+        "east=side,north=none,south=none,west=side":  { "model": "aotm:the_dust", "y": 90 },
+        "east=up,north=none,south=none,west=side": { "model": "aotm:the_dust", "y": 90 },
+        "east=side,north=none,south=none,west=up": { "model": "aotm:the_dust", "y": 270 },
+        "east=up,north=none,south=none,west=up": { "model": "aotm:the_dust" },
+
+        "east=side,north=side,south=side,west=none":    { "model": "aotm:the_dust", "uvlock": true },
+        "east=side,north=up,south=side,west=none":   { "model": "aotm:the_dust", "uvlock": true },
+        "east=side,north=side,south=up,west=none":   { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=side,south=side,west=none":   { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=side,south=up,west=none":  { "model": "aotm:the_dust", "uvlock": true },
+        "east=side,north=up,south=up,west=none":  { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=up,south=side,west=none":  { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=up,south=up,west=none": { "model": "aotm:the_dust", "uvlock": true },
+
+        "east=side,north=none,south=side,west=side":    { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=up,north=none,south=side,west=side":   { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=side,north=none,south=side,west=up":   { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=side,north=none,south=up,west=side":   { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=side,north=none,south=up,west=up":  { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=up,north=none,south=side,west=up":  { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=up,north=none,south=up,west=side":  { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=up,north=none,south=up,west=up": { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+
+        "east=none,north=side,south=side,west=side":    { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=side,south=up,west=side":   { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=up,south=side,west=side":   { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=side,south=side,west=up":   { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=up,south=side,west=up":  { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=up,south=up,west=side":  { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=side,south=up,west=up":  { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=none,north=up,south=up,west=up": { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+
+        "east=side,north=side,south=none,west=side":    { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=side,north=side,south=none,west=up":   { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=up,north=side,south=none,west=side":   { "model": "aotm:the_duste", "y": 270, "uvlock": true },
+        "east=side,north=up,south=none,west=side":   { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=up,north=up,south=none,west=side":  { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=up,north=side,south=none,west=up":  { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=side,north=up,south=none,west=up":  { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+        "east=up,north=up,south=none,west=up": { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+
+        "east=side,north=side,south=side,west=side": { "model": "aotm:the_dust", "uvlock": true },
+
+        "east=side,north=up,south=side,west=side": { "model": "aotm:the_dust", "uvlock": true },
+        "east=side,north=side,south=up,west=side": { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=up,north=side,south=side,west=side": { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=side,north=side,south=side,west=up": { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+
+        "east=side,north=up,south=up,west=side": { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=side,south=side,west=up": { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+
+        "east=up,north=up,south=side,west=side": { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=side,south=up,west=side": { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=side,north=side,south=up,west=up": { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=side,north=up,south=side,west=up": { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+
+        "east=up,north=up,south=up,west=side": { "model": "aotm:the_dust", "uvlock": true },
+        "east=up,north=side,south=up,west=up": { "model": "aotm:the_dust", "y": 90, "uvlock": true },
+        "east=side,north=up,south=up,west=up": { "model": "aotm:the_dust", "y": 180, "uvlock": true },
+        "east=up,north=up,south=side,west=up": { "model": "aotm:the_dust", "y": 270, "uvlock": true },
+
+        "east=up,north=up,south=up,west=up": { "model": "aotm:the_dust", "uvlock": true }
+    }
+}

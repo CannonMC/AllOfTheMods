@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "aotm:blocks/the_block",
+        "top": "aotm:blocks/the_block",
+        "side": "aotm:blocks/the_block"
+    }
+}

@@ -4,4 +4,20 @@ item.the_tool.name=The Tool
 
 tile.the_ore.name=The Ore
 
+tile.the_block.name=The Block
+
+tile.the_stair.name=The Stair
+
+
+item.the_secret.name=The Secret
+
+tile.secret_stone.name=Stone
+
+tile.secret_wood.name=Oak Wood Planks
+
+
 itemGroup.modCreativeTab=The Tab
+
+itemGroup.WIPTab=Experimental
+
+itemGroup.SecretBlocksTab=Secret Blocks
