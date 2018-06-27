@@ -3,17 +3,14 @@ package com.cannonmc.allofthemods;
 import com.cannonmc.allofthemods.init.AOTMBlocks;
 import com.cannonmc.allofthemods.init.AOTMItems;
 import com.cannonmc.allofthemods.init.AOTMRecipe;
-import com.cannonmc.allofthemods.init.AOTMOreGeneration;
 import com.cannonmc.allofthemods.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MODID, version = Reference.VERSION)
 public class AllOfTheMods {
