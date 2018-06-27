@@ -38,11 +38,9 @@ public class AOTMItems {
 		the_ingot = new Item().setUnlocalizedName("the_ingot").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_compact_ingot = new Item().setUnlocalizedName("the_compact_ingot").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_power_arrow = new Item().setUnlocalizedName("the_power_arrow").setCreativeTab(AllOfTheMods.modCreativeTab);
-		
-		
-		
+	
 	}
-
+	
 	public static void register() {
 		//Adding items
 		//GameRegistry.registerItem(the_door_item, the_door_item.getUnlocalizedName().substring(5));
