@@ -23,6 +23,8 @@ public class AllOfTheMods {
     public static final ModCreativeTab modCreativeTab = new ModCreativeTab("modCreativeTab");
     public static final ModCreativeTab SecretBlocksTab = new ModCreativeTab("SecretBlocksTab");
     public static final ModCreativeTab JamesTab = new ModCreativeTab("JamesTab");
+    public static final ModCreativeTab LukeTab = new ModCreativeTab("LukesTab");
+
     
     
     @EventHandler
