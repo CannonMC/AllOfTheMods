@@ -53,6 +53,7 @@ public class AOTMItems {
 
 	}
 
+	@SuppressWarnings("Duplicates")
 	public static void registerRenders() {
 		//Register Items
 		//registerRender(the_door_item);
@@ -62,7 +63,6 @@ public class AOTMItems {
 		registerRender(the_ingot);
 		registerRender(the_compact_ingot);
 		registerRender(the_power_arrow);
-		
 	}
 	
 	//Don't touch this
