@@ -26,6 +26,7 @@ public class AllOfTheMods {
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        System.out.println("Pre Init");
     	//Loads mod items
     	AOTMItems.init();
     	AOTMItems.register();
@@ -43,13 +44,14 @@ public class AllOfTheMods {
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
+        System.out.println("Init");
     	proxy.registerRenders();
     	
     }
     
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-    	
+        System.out.println("Post Init");
     }
     
 }
