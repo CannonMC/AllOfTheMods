@@ -62,8 +62,8 @@ public class AOTMBlocks {
 
 	}
 
+	@SuppressWarnings("Duplicates")
 	public static void registerRenders() {
-		
 		//The Collection
 		registerRender(the_ore);
 		registerRender(the_block);
@@ -71,7 +71,7 @@ public class AOTMBlocks {
 		registerRender(the_sky_rock);
 		//registerRender(the_dust);
 		//registerRender(the_door);
-		
+
 		//Secret Blocks
 		registerRender(secret_stone);
 		registerRender(secret_wood);
@@ -85,6 +85,4 @@ public class AOTMBlocks {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
 				new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 	}
-
-	
 }
