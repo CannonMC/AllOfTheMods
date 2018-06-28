@@ -20,6 +20,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class AOTMBlocks {
 
 	////The Collection
+	public static Block the_test;
 	public static Block the_ore;
 	public static Block the_block;
 	public static Block the_stair;
@@ -35,6 +36,7 @@ public class AOTMBlocks {
 	public static void init() {
 		
 		//The Collection
+		the_test = new TheOre(Material.rock).setUnlocalizedName("the_test").setCreativeTab(AllOfTheMods.WIPTab);
 		the_ore = new TheOre(Material.rock).setUnlocalizedName("the_ore").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_block = new TheBlock(Material.rock).setUnlocalizedName("the_block").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_stair = new TheStair(the_block.getDefaultState()).setUnlocalizedName("the_stair").setCreativeTab(AllOfTheMods.modCreativeTab);
@@ -43,12 +45,13 @@ public class AOTMBlocks {
 		//the_door = new TheDoor(Material.wood).setUnlocalizedName("the_door").setCreativeTab(AllOfTheMods.WIPTab);
 		
 		//Secret Blocks
-		secret_stone = new SecretBlock(Material.rock).setUnlocalizedName("secret_stone").setCreativeTab(AllOfTheMods.SecretBlocksTab);
-		secret_wood = new SecretBlock(Material.wood).setUnlocalizedName("secret_wood").setCreativeTab(AllOfTheMods.SecretBlocksTab);
+		secret_stone = new SecretBlock(Material.rock).setUnlocalizedName("secret_stone").setCreativeTab(AllOfTheMods.secretBlocksTab);
+		secret_wood = new SecretBlock(Material.wood).setUnlocalizedName("secret_wood").setCreativeTab(AllOfTheMods.secretBlocksTab);
 	}
 
 	public static void register() {
 		//The Collection
+		GameRegistry.registerBlock(the_test, the_test.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(the_ore, the_ore.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(the_block, the_block.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(the_stair, the_stair.getUnlocalizedName().substring(5));
@@ -65,6 +68,7 @@ public class AOTMBlocks {
 	@SuppressWarnings("Duplicates")
 	public static void registerRenders() {
 		//The Collection
+		registerRender(the_test);
 		registerRender(the_ore);
 		registerRender(the_block);
 		registerRender(the_stair);
