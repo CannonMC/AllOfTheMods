@@ -8,6 +8,14 @@ tile.the_block.name=The Block
 
 tile.the_stair.name=The Stair
 
+item.the_ingot.name=The Ingot
+
+item.the_compact_ingot.name=The Compact Ingot
+
+item.the_power_arrow.name=The Power Arrow
+
+tile.the_sky_rock.name=The Sky Rock
+
 
 item.the_secret.name=The Secret
 

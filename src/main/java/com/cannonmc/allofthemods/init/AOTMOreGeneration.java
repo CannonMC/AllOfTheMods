@@ -18,11 +18,12 @@ public class AOTMOreGeneration implements IWorldGenerator {
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator,
 			IChunkProvider chunkProvider) {
 		switch (world.provider.getDimensionId()) {
-		case 1:
-			generateEnd(world, random, chunkX, chunkZ);
-			break;
 		case 0:
 			generateOverworld(world, random, chunkX, chunkZ);
+			
+			break;
+		case 1:
+			generateEnd(world, random, chunkX, chunkZ);
 			break;
 		case -1:
 			generateNether(world, random, chunkX, chunkZ);
@@ -30,19 +31,19 @@ public class AOTMOreGeneration implements IWorldGenerator {
 
 		}
 
-	}
+	} 
 	
 	public static void init() {
 		GameRegistry.registerWorldGenerator(new AOTMOreGeneration(), 0);
 	}
-
+	
 	public void generateEnd(World world, Random rand, int x, int z) {
 
 	}
 
 	public void generateOverworld(World world, Random rand, int x, int z) {
-		generateOre(AOTMBlocks.the_ore, world, rand, x, z, 10, 20, 100, 0, 70, Blocks.stone);
-		//Change 100 to something else after
+		generateOre(AOTMBlocks.the_ore, world, rand, x, z, 3, 8, 10, 5, 40, Blocks.stone);
+		generateOre(AOTMBlocks.the_sky_rock, world, rand, x, z, 1, 4, 1, 240, 250, Blocks.air);
 	}
 
 	public void generateNether(World world, Random rand, int x, int z) {
@@ -62,5 +63,7 @@ public class AOTMOreGeneration implements IWorldGenerator {
 			gen.generate(world, random, blockPos);
 		}
 	}
+	
+	
 
 }
