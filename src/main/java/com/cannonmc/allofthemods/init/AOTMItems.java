@@ -2,13 +2,13 @@ package com.cannonmc.allofthemods.init;
 
 import com.cannonmc.allofthemods.AllOfTheMods;
 import com.cannonmc.allofthemods.Reference;
-import com.cannonmc.allofthemods.item.TheDoorItem;
+//import com.cannonmc.allofthemods.item.TheDoorItem;
 import com.cannonmc.allofthemods.item.TheTool;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -23,6 +23,7 @@ public class AOTMItems {
 	public static Item the_ingot;
 	public static Item the_compact_ingot;
 	public static Item the_power_arrow;
+	public static Item the_bali;
 	
 	
 	
@@ -38,6 +39,7 @@ public class AOTMItems {
 		the_ingot = new Item().setUnlocalizedName("the_ingot").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_compact_ingot = new Item().setUnlocalizedName("the_compact_ingot").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_power_arrow = new Item().setUnlocalizedName("the_power_arrow").setCreativeTab(AllOfTheMods.modCreativeTab);
+		the_bali = new Item().setUnlocalizedName("the_bali").setCreativeTab(AllOfTheMods.modCreativeTab);
 	
 	}
 	
@@ -50,6 +52,7 @@ public class AOTMItems {
 		GameRegistry.registerItem(the_ingot, the_ingot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(the_compact_ingot, the_compact_ingot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(the_power_arrow, the_power_arrow.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(the_bali, the_bali.getUnlocalizedName().substring(5));
 
 	}
 
@@ -63,6 +66,7 @@ public class AOTMItems {
 		registerRender(the_ingot);
 		registerRender(the_compact_ingot);
 		registerRender(the_power_arrow);
+		registerRender(the_bali);
 	}
 	
 	//Don't touch this
