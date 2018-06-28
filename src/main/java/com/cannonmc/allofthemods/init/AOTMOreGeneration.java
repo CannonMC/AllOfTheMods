@@ -33,6 +33,10 @@ public class AOTMOreGeneration implements IWorldGenerator {
 
 	} 
 	
+	public static void init() {
+		GameRegistry.registerWorldGenerator(new AOTMOreGeneration(), 0);
+	}
+	
 	public void generateEnd(World world, Random rand, int x, int z) {
 
 	}

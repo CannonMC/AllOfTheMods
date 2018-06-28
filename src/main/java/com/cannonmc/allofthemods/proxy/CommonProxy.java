@@ -10,7 +10,4 @@ public class CommonProxy {
 		
 	}
 	
-	public void registerWorldGenerators() {
-		GameRegistry.registerWorldGenerator(new AOTMOreGeneration(), 0);
-	}
 }
