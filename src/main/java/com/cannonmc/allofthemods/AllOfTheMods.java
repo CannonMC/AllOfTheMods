@@ -2,6 +2,7 @@ package com.cannonmc.allofthemods;
 
 import com.cannonmc.allofthemods.init.AOTMBlocks;
 import com.cannonmc.allofthemods.init.AOTMItems;
+import com.cannonmc.allofthemods.init.AOTMGeneration;
 import com.cannonmc.allofthemods.init.AOTMRecipe;
 import com.cannonmc.allofthemods.proxy.CommonProxy;
 
@@ -21,11 +22,8 @@ public class AllOfTheMods {
     
     //Creative tab
     public static final ModCreativeTab modCreativeTab = new ModCreativeTab("modCreativeTab");
-    public static final ModCreativeTab SecretBlocksTab = new ModCreativeTab("SecretBlocksTab");
-    public static final ModCreativeTab JamesTab = new ModCreativeTab("JamesTab");
-    public static final ModCreativeTab LukeTab = new ModCreativeTab("LukesTab");
-
-    
+    public static final ModCreativeTab secretBlocksTab = new ModCreativeTab("secretBlocksTab");
+    public static final ModCreativeTab WIPTab = new ModCreativeTab("WIPTab");
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -41,7 +39,10 @@ public class AllOfTheMods {
     	//Loads recipes
     	AOTMRecipe.init();
     	
-    	proxy.registerWorldGenerators();
+    	//Loads ore generation
+    	AOTMGeneration.init();
+    	
+
     	
     }
     

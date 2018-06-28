@@ -26,7 +26,7 @@ public class ModCreativeTab extends CreativeTabs{
 			return AOTMItems.the_item;
 		} else if(TabInput == "WIPTab") {
 			return Items.paper;
-		}else if(TabInput == "SecretBlocksTab") {
+		}else if(TabInput == "secretBlocksTab") {
 			return Item.getItemFromBlock(AOTMBlocks.secret_stone);
 		}
 		

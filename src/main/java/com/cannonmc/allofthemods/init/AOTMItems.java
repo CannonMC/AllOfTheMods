@@ -35,7 +35,7 @@ public class AOTMItems {
 		//the_door_item = new TheDoorItem(AOTMBlocks.the_door).setUnlocalizedName("the_door_item").setCreativeTab(AllOfTheMods.WIPTab);
 		the_item = new Item().setUnlocalizedName("the_item").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_tool = new TheTool(theMaterial).setUnlocalizedName("the_tool").setCreativeTab(AllOfTheMods.modCreativeTab);
-		the_secret = new Item().setUnlocalizedName("the_secret").setCreativeTab(AllOfTheMods.SecretBlocksTab);
+		the_secret = new Item().setUnlocalizedName("the_secret").setCreativeTab(AllOfTheMods.secretBlocksTab);
 		the_ingot = new Item().setUnlocalizedName("the_ingot").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_compact_ingot = new Item().setUnlocalizedName("the_compact_ingot").setCreativeTab(AllOfTheMods.modCreativeTab);
 		the_power_arrow = new Item().setUnlocalizedName("the_power_arrow").setCreativeTab(AllOfTheMods.modCreativeTab);
